@@ -12,7 +12,7 @@ public class NumberGenerator {
 
             Random random = new Random();
             int rand_num = random.nextInt(100);
-            System.out.println(rand_num);
+            //System.out.println(rand_num);
 
             //getting user input
             System.out.printf("Enter a number between 0 to 100 :");
@@ -51,10 +51,18 @@ public class NumberGenerator {
                 }
 
             }
+            total_score = score + total_score;
+
+
+        }
+
+        System.out.println("Thank you for the participation, Your chances are almost over.");
+        System.out.println("Your total score is:" + total_score);
+
 
 
 
         
     }
 }
-}
+
