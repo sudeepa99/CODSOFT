@@ -23,6 +23,31 @@ public class GradeCalculator {
              total = total+marks[i];
         }
 
+        //calculating average marks
+        Double marks_avg=(double)total/(double)no_sub;
+
+
+        //assigning grades
+
+        String grade;
+
+        if (marks_avg>=75) {
+            grade="A";
+        }
+        else if (marks_avg<75 && marks_avg>=65) {
+            grade="B";      
+        }
+        else if (marks_avg<65 && marks_avg>=55) {
+            grade="C";      
+        }
+        else if (marks_avg<55 && marks_avg>=40) {
+            grade="S";      
+        }
+        else{
+            grade="F";
+        }
+
+
 
     }
 }
