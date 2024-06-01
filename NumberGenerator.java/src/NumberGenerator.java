@@ -19,6 +19,40 @@ public class NumberGenerator {
             Scanner scanner = new Scanner(System.in);
             int guessing_num = scanner.nextInt();
 
+            //evaluating user guessings
+
+            if (guessing_num>100 || guessing_num<0) {
+                System.out.println("Wrong input");
+                
+            }
+            else{
+                if (guessing_num==rand_num){
+                    System.out.println("Congratulations! your guessing is accurate.");
+                    score=10;
+    
+                }
+                
+                else if (guessing_num-rand_num>9){
+                    System.out.println("Too high, Try again");
+                    score=0;
+    
+                }
+                else if (rand_num-guessing_num>9){
+                    System.out.println("Too low, Try again");
+                    score=0;
+                }else if (guessing_num-rand_num<10) {
+                    System.out.println("So close, Try again");
+                    score=5;
+                    
+                }
+                else if (rand_num-guessing_num<10){
+                    System.out.println("So close, Try again");
+                    score=5;
+                }
+
+            }
+
+
 
         
     }
