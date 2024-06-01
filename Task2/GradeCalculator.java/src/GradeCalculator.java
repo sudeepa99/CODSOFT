@@ -47,6 +47,10 @@ public class GradeCalculator {
             grade="F";
         }
 
+        System.out.println("Total Marks :" + total);
+        System.out.println("Average Marks :" + marks_avg);
+        System.out.println("Grade :" + grade);
+
 
 
     }
