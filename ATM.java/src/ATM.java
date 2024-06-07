@@ -1,10 +1,18 @@
 import java.util.Scanner;
 
 public class ATM {
+    Scanner scanner = new Scanner(System.in);
+
+    private BankAccount account;
+
+    public ATM(BankAccount account){
+        this.account=account;
+
+    }
+
 
     public void display(){
-        Scanner scanner = new Scanner(System.in);
-
+        
         while (true) {
             System.out.println("Welcome ! ");
             System.out.println("Choose your option from the menu:");
@@ -64,10 +72,21 @@ public class ATM {
 
 
     public void WithdrawMoney(){
-        
+        System.out.println("Enter the withdrwa amount");
 
+        double amount= scanner.nextDouble();
 
-    
+        if (amount <=0) {
+            System.out.println("Amount should be more than 0");
+            
+        }
+        else if (account.withdraw(amount)) {
+            System.out.println("Successfully withdrawed, Your new balance is: " + account.getBalance());
+            
+        }
+        else{
+            System.out.println("Insufficient funds, Your current balance is: " + account.getBalance());
+        }
 
     }
 
