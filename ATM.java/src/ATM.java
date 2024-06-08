@@ -108,7 +108,8 @@ public class ATM {
         
     }
 
-    public void CheckBalance(){
+    private void CheckBalance(){
+        System.out.println("Your account balance is :"+account.getBalance());
         
 
     }
