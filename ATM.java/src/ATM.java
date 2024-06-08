@@ -90,7 +90,17 @@ public class ATM {
 
     }
 
-    public void DepositMoney(){
+    private void DepositMoney(){
+        System.out.println("Enter amount to deposit");
+        double amount = scanner.nextDouble();
+
+        if (amount<=0) {
+            System.out.println("Invalid amount, Please enter a valid amount");
+            
+        }
+        account.deposit(amount);
+
+        System.out.println("Deposit successfull, Your new balance is :"+ account.getBalance());
 
         
 
