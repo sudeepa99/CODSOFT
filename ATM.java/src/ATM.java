@@ -56,9 +56,11 @@ public class ATM {
     }
 
     public static void main(String[] args) throws Exception {
-        BankAccount bankAccount = new BankAccount(500.0);
+        BankAccount account = new BankAccount(1000.0);
     
-        double with_money;
+        ATM atm = new ATM(account);
+
+        atm.display();
 
         //taking user from the deposit money
         
