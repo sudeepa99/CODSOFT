@@ -18,6 +18,17 @@ public class Quiz {
 
         };
 
+        // displaying questions and answers
+        
+        for(int i=0;i<quiz.length;i++){
+            System.out.println("Question " + (i+1) + ":" + quiz[i][0]);
+
+            for(int j=1;j<=4;j++){
+                System.out.println("Answer" + j + ":" + quiz[i][j]);
+            }
+            System.out.println("");
+        }
+
         
     }
 }
