@@ -1,6 +1,16 @@
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class Quiz {
     public static void main(String[] args) throws Exception {
-        //creating questions and answers
+
+        Timer timer = new Timer();
+        TimerTask task = new TimerTask() {
+            @Override
+
+            public void run() {
+
+                //creating questions and answers
 
         String[][] quiz = {
 
@@ -14,7 +24,7 @@ public class Quiz {
             {"What is the smallest prime number?", "0", "1", "2", "3"},
             {"What is the capital city of Australia?", "Sydney", "Melbourne", "Brisbane", "Canberra"},
             {"Which planet is known as the Red Planet?", "Venus", "Mars", "Jupiter", "Mercury"}
-
+        
 
         };
 
@@ -28,6 +38,18 @@ public class Quiz {
             }
             System.out.println("");
         }
+    
+
+
+            };
+
+            
+
+        
+            
+        };
+
+        
 
         
     }
