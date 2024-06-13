@@ -1,8 +1,12 @@
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.Scanner;
 
 public class Quiz {
     public static void main(String[] args) throws Exception {
+
+        
+
 
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {
@@ -38,6 +42,10 @@ public class Quiz {
             }
             System.out.println("");
         }
+
+        
+
+    
     
 
 
@@ -48,6 +56,14 @@ public class Quiz {
         
             
         };
+
+        // allowing users to select answers
+
+        Scanner scanner = new Scanner(System.in);
+
+        int answer =scanner.nextInt();
+
+        
 
         
 
